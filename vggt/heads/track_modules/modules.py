@@ -98,15 +98,15 @@ class Mlp(nn.Module):
     """MLP as used in Vision Transformer, MLP-Mixer and related networks"""
 
     def __init__(
-        self,
-        in_features,
-        hidden_features=None,
-        out_features=None,
-        act_layer=nn.GELU,
-        norm_layer=None,
-        bias=True,
-        drop=0.0,
-        use_conv=False,
+            self,
+            in_features,
+            hidden_features=None,
+            out_features=None,
+            act_layer=nn.GELU,
+            norm_layer=None,
+            bias=True,
+            drop=0.0,
+            use_conv=False,
     ):
         super().__init__()
         out_features = out_features or in_features
@@ -132,12 +132,12 @@ class Mlp(nn.Module):
 
 class AttnBlock(nn.Module):
     def __init__(
-        self,
-        hidden_size,
-        num_heads,
-        attn_class: Callable[..., nn.Module] = nn.MultiheadAttention,
-        mlp_ratio=4.0,
-        **block_kwargs,
+            self,
+            hidden_size,
+            num_heads,
+            attn_class: Callable[..., nn.Module] = nn.MultiheadAttention,
+            mlp_ratio=4.0,
+            **block_kwargs,
     ):
         """
         Self attention block

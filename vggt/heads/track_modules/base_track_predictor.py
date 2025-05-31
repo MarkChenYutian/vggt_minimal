@@ -16,16 +16,16 @@ from .modules import Mlp
 
 class BaseTrackerPredictor(nn.Module):
     def __init__(
-        self,
-        stride=1,
-        corr_levels=5,
-        corr_radius=4,
-        latent_dim=128,
-        hidden_size=384,
-        use_spaceatt=True,
-        depth=6,
-        max_scale=518,
-        predict_conf=True,
+            self,
+            stride=1,
+            corr_levels=5,
+            corr_radius=4,
+            latent_dim=128,
+            hidden_size=384,
+            use_spaceatt=True,
+            depth=6,
+            max_scale=518,
+            predict_conf=True,
     ):
         super(BaseTrackerPredictor, self).__init__()
         """

@@ -22,16 +22,16 @@ class EfficientUpdateFormer(nn.Module):
     """
 
     def __init__(
-        self,
-        space_depth=6,
-        time_depth=6,
-        input_dim=320,
-        hidden_size=384,
-        num_heads=8,
-        output_dim=130,
-        mlp_ratio=4.0,
-        add_space_attn=True,
-        num_virtual_tracks=64,
+            self,
+            space_depth=6,
+            time_depth=6,
+            input_dim=320,
+            hidden_size=384,
+            num_heads=8,
+            output_dim=130,
+            mlp_ratio=4.0,
+            add_space_attn=True,
+            num_virtual_tracks=64,
     ):
         super().__init__()
 
